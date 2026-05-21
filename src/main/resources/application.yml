@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: PetEmergency
+  r2dbc:
+    url: r2dbc:postgresql://ep-floral-rice-am8s97dl-pooler.c-5.us-east-1.aws.neon.tech/PetEmergency?sslmode=require
+    username: neondb_owner
+    password: npg_hqelf5Vo4kPc
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG
+
+rapidapi:
+  key: d1450f9142mshbdf5aac64ec3cb0p141c3djsnb580a7a7d9b4
