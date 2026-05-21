@@ -2,8 +2,8 @@ name: Docker Hub
 on:
   push:
     branches:
-      - develop
-      - Spring-WebFlux-SQL 
+      - develop #Rama principal de desarrollo
+      - Spring-WebFlux-SQL #Rama para el desarrollo con Spring WebFlux-SQL
   pull_request:
     branches:
       - develop
